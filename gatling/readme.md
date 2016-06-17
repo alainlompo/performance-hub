@@ -60,6 +60,19 @@ Response time distribution:
 <br/>
 <img src="https://github.com/alainlompo/performance-hub/blob/master/gatling/screen-snapshots/gatling_report_page_4.png" />
 
+<h4>Second sample: The rampusers simulation</h4>
+In this second sample, we modify the first simulation class in order to:
+<ul>
+	<li>Define multiple usage scenari: we create a simple user scenario and an administrator scenario</li>
+	<li>Load the simulation with many users</li>
+	<li>Inejct the user using the Gatling's rampusers feature which makes it look like the natural way users will connect to the app (not at the same time, but gradually over time)</li>
+</ul>
+
+Everything regarding this sample (SimpleSimulation.scala file, zipped html report and screen shots) is found in the <a href="https://github.com/alainlompo/performance-hub/tree/master/gatling/rampusers-simulation">rampusers simulation</a> folder
+
+<h4>Third sample: Dynamic data injection and usage</h4>
+The third samples shows how to dynamically inject datas to customize the users scenari (making them more personnal) and also how to reuse the result of a previous request into the next request.
+Everything about the third sample is found in the <a href="https://github.com/alainlompo/performance-hub/tree/master/gatling/dynamic-datas">dynamic datas</a> folder.
 
 
 
