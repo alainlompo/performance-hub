@@ -7,5 +7,24 @@ basic features of Gatling and how to get it running quickly</p>
 <h3>Generating a simulation scenario by using the recorder</h3>
 Gatling uses scenarios written in <a href='http://www.scala-lang.org/'>Scala programming language</a> to run stress tests against web applications. The simplest way to 
 generate a basic simulation class is to use the recorder. Using the recorder, we browse the web application and we execute one or many use cases. then Gatling generates 
-the simulation class that will be used next to play the stress tests.
+the simulation class that will be used next to play the stress tests. 
+
+Again it is advisable to read the quickstart to get acquainted with these basic features. Once you have launched the recorder using the recorder script:
+
+<ul>
+	<li>$GATLING_HOME/bin/recorder.sh (on Unix like systems)</li>
+	<li>%GATLING_HOME%\bin\recorder.bat (on Windows)</li>
+</ul>,
+
+you will have to specify a listening port for localhost HTTP/HTTPS and then configure the browser you will use to browse the tested web application. Manually configure a proxy that uses
+the same listening port in a similar way as what is shown in the picture below (configuration for Mozilla firefox)<br/>
+
+<img src="https://github.com/alainlompo/performance-hub/blob/master/gatling/screen-snapshots/mozilla_manual_proxy_configuration.png" />
+<br/>
+You can of course use any available port instead of the one shown on the picture. Notice that depending on the customizations of your browser you may experience unpleasant
+ssl handshake failures event after you have followed the quickstart exactly. In most cases, these errors will go away if you reset your browser's ssls and tls custom configurations.
+In the case of Mozilla you can use the <b>about:config</b> page to do that.
+
+
+
 
